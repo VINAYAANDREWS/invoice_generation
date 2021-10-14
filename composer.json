@@ -1,8 +1,0 @@
-{
-    "require": {
-        "google/apiclient": "^2.0",
-        "sociallydev/spaces-api": "dev-master",
-        "firebase/php-jwt": "^5.2",
-        "phpmailer/phpmailer": "^6.4"
-    }
-}

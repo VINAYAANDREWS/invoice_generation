@@ -32,13 +32,7 @@
                                     <?php echo $this->session->flashdata('error');?>
                                 </div>
                             <?php } 
-                             if ($this->session->flashdata('machine_code_exists')) { ?>
-                             <div class="alert alert-danger alert-dismissable margin-top20">
-                                
-                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                    <?php echo $this->session->flashdata('machine_code_exists');?>
-                                </div>
-                            <?php } 
+                             
                             if($this->session->flashdata('msg')){ ?>
                                <div class="alert alert-success alert-dismissable margin-top20">
                                     <button type="button" class="close" data-dismiss="alert">&times;</button>

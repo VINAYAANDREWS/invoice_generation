@@ -76,7 +76,7 @@ class Invoice_generation extends MY_Controller {
                      $this->session->set_flashdata('error', 'Something went wrong.');
                  } 
                   
-                 redirect("mini_bank/add_customers");
+                 redirect("invoice_generation/add_customers");
              }
              
         }

@@ -24,7 +24,7 @@ class Invoice_generation extends MY_Controller {
                 if (isset($user_data['error']) && $user_data['error']) {
                     $this->session->set_flashdata('msg', $user_data['error']);
                     
-                    redirect('mini_bank');
+                    redirect('invoice_generation');
                 } else if (isset($user_data['user']) && $user_data['user']) {
                     
                       $user_session_data = array(
@@ -33,7 +33,7 @@ class Invoice_generation extends MY_Controller {
                                          'user_type' => $user_data['user']['user_type']
                         );
                         $this->session->set_userdata($user_session_data);
-                   redirect('mini_bank/add_customers');
+                   redirect('invoice_generation/add_customers');
                 }                                                
             }
         }
